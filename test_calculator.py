@@ -3,6 +3,8 @@ from main import calculate
 class TestCalculator(unittest.TestCase):
     def test_addition(self):
         self.assertEqual(calculate(8, 2, "1"), 10)
-
+    def test_subtraction(self):
+        self.assertEqual(calculate(7, 2, "2"), 5)
+    
 if __name__ == "__main__":
     unittest.main()
