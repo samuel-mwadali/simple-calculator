@@ -21,7 +21,7 @@ def main():
     """Run the Simple Calculator."""
     while True:
         print("\n ======= SIMPLE CALCULATOR =======")
-        print("1. Addition\n2. Subtraction\n3. Multiplicationn\n4. Division\n5. Exit")
+        print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Exit")
         choice = input("Choose an operation (1-5): ")
         if choice == '5':
             print("Calculator closed. Goodbye!")

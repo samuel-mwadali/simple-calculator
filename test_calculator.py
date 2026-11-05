@@ -5,6 +5,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculate(8, 2, "1"), 10)
     def test_subtraction(self):
         self.assertEqual(calculate(7, 2, "2"), 5)
+    def test_multiplication(self):
+        self.assertEqual(calculate(4, 4, "3"), 16)
     
 if __name__ == "__main__":
     unittest.main()
