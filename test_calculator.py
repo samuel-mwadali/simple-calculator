@@ -7,6 +7,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculate(7, 2, "2"), 5)
     def test_multiplication(self):
         self.assertEqual(calculate(4, 4, "3"), 16)
+    def test_division(self):
+        self.assertEqual(calculate(12, 3, "4"), 4)
     
 if __name__ == "__main__":
     unittest.main()
