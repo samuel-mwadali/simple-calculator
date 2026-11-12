@@ -13,21 +13,24 @@ def calculate(num1, num2, operation):
         return num1 - num2
     elif operation == '3':
         return num1 * num2
+    elif operation == '5':
+        return num1 ** num2
     elif operation == '4':
         if num2 == 0:
             return None
         return num1 / num2
-def main():
+def run():
     """Run the Simple Calculator."""
     while True:
         print("\n ======= SIMPLE CALCULATOR =======")
-        print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Exit")
+        print("Basic Arithmetic Operation\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\nExtended Arithmetic & Algebra Operations: " \
+        "\n5. Exponentiation\n6. Root extraction\n7. Exit")
         choice = input("Choose an operation (1-5): ")
-        if choice == '5':
+        if choice == '7':
             print("Calculator closed. Goodbye!")
             break
-        if choice not in ("1", "2", "3", "4", "5"):
-            print("Invalid choice! Choose an option from 1 to 5.")
+        if choice not in ("1", "2", "3", "4", "5", "6", "7"):
+            print("Invalid choice! Choose an option from 1 to 7.")
             continue
         num1 = get_number("Enter the first number: ")
         num2 = get_number("Enter the second number: ")
@@ -38,4 +41,4 @@ def main():
         if result is not None:
             print(f"Result: {result}")
 if __name__ == "__main__":
-    main()
+    run()
