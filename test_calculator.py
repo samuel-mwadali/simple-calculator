@@ -9,6 +9,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculate(4, 4, "3"), 16)
     def test_division(self):
         self.assertEqual(calculate(12, 3, "4"), 4)
+    def test_exponentiation(self):
+        self.assertEqual(calculate(2, 2, "5"), 4)
     
 if __name__ == "__main__":
     unittest.main()
